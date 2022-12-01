@@ -158,6 +158,7 @@ from .table import (  # noqa
     CT_TblLayoutType,
     CT_TblPr,
     CT_TblWidth,
+    CT_TblLook,
     CT_Tc,
     CT_TcPr,
     CT_TrPr,
@@ -172,6 +173,7 @@ register_element_cls('w:tblGrid',    CT_TblGrid)
 register_element_cls('w:tblLayout',  CT_TblLayoutType)
 register_element_cls('w:tblPr',      CT_TblPr)
 register_element_cls('w:tblStyle',   CT_String)
+register_element_cls('w:tblLook',    CT_TblLook)
 register_element_cls('w:tc',         CT_Tc)
 register_element_cls('w:tcPr',       CT_TcPr)
 register_element_cls('w:tcW',        CT_TblWidth)
@@ -230,6 +232,8 @@ from .text.parfmt import (  # noqa
     CT_TabStop,
     CT_TabStops,
 )
+from .text.hyperlink import CT_Hyperlink
+register_element_cls('w:hyperlink', CT_Hyperlink)
 register_element_cls('w:ind',             CT_Ind)
 register_element_cls('w:jc',              CT_Jc)
 register_element_cls('w:keepLines',       CT_OnOff)
